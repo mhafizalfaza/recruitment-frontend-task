@@ -1,0 +1,117 @@
+.SongItem {
+  animation-name: animateIn;
+  animation-duration: 350ms;
+  animation-delay: calc(var(--animation-order) * 100ms);
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(.17,.67,1,1.23);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  .info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: var(--base-secondary);
+
+    .cover-image {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+    }
+  
+    .text {
+      padding-left: 16px;
+      text-align: left;
+      color: var(--contrast);
+      padding: 8px 16px;
+      flex-grow: 1;
+
+      .name {
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 4px;
+      }
+    
+      .artist-name {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+
+      
+
+      .genres-and-plays {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+
+        .genres {
+          .song-genre {
+            background-color: #dddddd;
+            color: #242526;
+            font-size: 12px;
+            text-transform: uppercase;
+            border-radius: 8px;
+            padding: 4px 8px;
+            margin-right: 4px;
+            letter-spacing: 2px;
+
+            @media screen and (max-width: 639px) {
+              &:not(:first-child) {
+                display: none;
+              }
+            }
+          }
+        }
+
+        .plays-count {
+          color: var(--contrast);
+          text-transform: uppercase;
+          font-size: 12px;
+          font-weight: 600;
+        }
+        
+      }
+      
+    }
+
+    .like-btn {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      background: transparent;
+      border: 0;
+      cursor: pointer;
+      outline: 0;
+      
+      .heart-icon {
+        width: 24px;
+      }
+    }
+  }
+
+  .rhap_container {
+    background-color: var(--base-secondary);
+    color: var(--contrast);
+    box-shadow: none;
+  }
+
+  .rhap_time {
+    color: var(--contrast);
+  }  
+}
+
+@keyframes animateIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.6) translateY(-8px);
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
