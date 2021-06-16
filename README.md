@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Loudly Frontend Task
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is addressed to Loudly hiring team to complete the recruitment process of Frontend Developer position at Loudly.
 
 ## Available Scripts
 
