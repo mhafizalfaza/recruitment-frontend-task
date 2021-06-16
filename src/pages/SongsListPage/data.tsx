@@ -1,0 +1,5 @@
+export const pageTitle = 'Loudly | Trending Music'
+export const title = 'Trending Music'
+export const songsUrl = 'https://api-stg.jam-community.com/song/trending'
+export const likeUrl = 'https://api-stg.jam-community.com/interact/like'
+export const apiKey = '___agAFTxkmMIWsmN9zOpM_6l2SkZPPy21LGRlxhYD8'
