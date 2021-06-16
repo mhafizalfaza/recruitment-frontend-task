@@ -1,0 +1,32 @@
+.SongsListPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0;
+
+  .title {
+    color: var(--contrast);
+    margin-bottom: 24px;
+  }
+
+  .songs-list-wrapper {
+    width: 640px;
+
+    @media screen and (max-width: 639px) {
+      width: 100%;
+      padding: 0 16px;
+      box-sizing: border-box;
+    }
+  }
+
+  .refresh-btn {
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    
+    .refresh-icon {
+      width: 60px;
+    }
+  }
+}
