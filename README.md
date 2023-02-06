@@ -1,6 +1,6 @@
-# Loudly Frontend Task
+# Recruitment - Frontend Task
 
-This project is addressed to Loudly hiring team to complete the recruitment process of Frontend Developer position at Loudly.
+This project is addressed to Loudly hiring team to complete the recruitment process of Frontend Developer position.
 
 ## Available Scripts
 
